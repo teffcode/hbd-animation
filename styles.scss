@@ -1,5 +1,8 @@
+$black: #333;
+$skin: peachpuff;
+
 body {
-  background: pink;
+  // background: pink;
 }
 
 .center-h {
@@ -9,18 +12,91 @@ body {
   right: 0;
 }
 
+.hand {
+  background: $skin;
+  border-radius: 50%;
+  bottom: 0px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+}
+
+.shorthair {
+  background: #333;
+  border-radius: 5px;
+  width: 10px;
+  height: 35px;
+  top: 35px;
+  position: absolute;
+  z-index: 1;
+}
+
+.ear {
+  background: $skin;
+  border-radius: 50%;
+  bottom: 0px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 60px;
+}
+
 .coder {
   width: 400px;
   height: 400px;
-  // background-color: lightblue;
+  background-color: lightblue;
   position: relative;
 
-  &__boy {
+  &__head {
+    // background: blueviolet;
+    top: 90px;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    z-index: 3;
 
-    
+    &--hair {
+      background: $black;
+      border-radius: 20px 0px 10px 0px;
+      width: 130px;
+      height: 40px;
+    }
+
+    &--lefthair {
+      left: 0px;
+    }
+
+    &--righthair {
+      right: 10px;
+    }
+
+    &--face {
+      background: $skin;
+      border-radius: 0px 0px 50px 50px;
+      width: 120px;
+      height: 100px;
+    }
+
+    &--leftear {
+      left: -10px;
+    }
+
+    &--rightear {
+      right: 0px;
+    }
   }
 
-  &__boy--shirt {
+  &__neck {
+    background: $skin;
+    border-radius: 50%;
+    bottom: 150px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+  }
+
+  &__shirt {
     background: darkblue;
     border-radius: 35px 35px 0px 0px;
     bottom: 0px;
@@ -28,12 +104,12 @@ body {
     height: 170px;
   }
 
-  &__boy--neck {
-    background: peachpuff;
-    border-radius: 50%;
-    bottom: 150px;
-    width: 40px;
-    height: 40px;
+  &__lefthand {
+    left: 90px;
+  }
+
+  &__righthand {
+    right: 90px;;
   }
 
   &__screen {
@@ -91,5 +167,6 @@ body {
     width: 250px;
     height: 15px;
     bottom: 0px;
+    z-index: 3;
   }
 }
