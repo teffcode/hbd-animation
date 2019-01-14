@@ -35,6 +35,46 @@
   top: 60px;
 }
 
+.eye1 {
+  animation-name: eye1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  border-radius: 50%;
+  border-bottom: 3px solid #333;
+  bottom: 0px;
+  width: 20px;
+  height: 22px;
+  position: absolute;
+  top: 50px;
+  z-index: 5;
+}
+
+.eye2 {
+  animation-name: eye2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  background: #333;
+  border-radius: 50%;
+  bottom: 0px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 65px;
+  z-index: 5;
+}
+
+.eye2__container {
+  animation-name: eye2container;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.eye3__container {
+  animation-name: eye3container;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
 .coder {
   width: 400px;
   height: 400px;
@@ -72,6 +112,18 @@
 .coder__head--rightear {
   right: 0px;
 }
+.coder__head--lefteye1 {
+  left: 30px;
+}
+.coder__head--righteye1 {
+  right: 40px;
+}
+.coder__head--lefteye2 {
+  left: 35px;
+}
+.coder__head--righteye2 {
+  right: 45px;
+}
 .coder__neck {
   background: peachpuff;
   border-radius: 50%;
@@ -81,7 +133,7 @@
   z-index: 2;
 }
 .coder__shirt {
-  background: darkblue;
+  background: #103147;
   border-radius: 35px 35px 0px 0px;
   bottom: 0px;
   width: 190px;
@@ -144,6 +196,42 @@
   height: 15px;
   bottom: 0px;
   z-index: 3;
+}
+
+@keyframes eye1 {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes eye2container {
+  0% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 0;
+  }
+  64% {
+    opacity: 1;
+  }
+}
+@keyframes eye2 {
+  0% {
+    height: 10px;
+  }
+  5% {
+    transform: translate(0px, 5px);
+    height: 1px;
+  }
+  10% {
+    transform: translate(0px, 0px);
+    height: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
